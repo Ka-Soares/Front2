@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background-color: #1e2235;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+header{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+nav{
+    width: 100%;
+    display: inline-block;
+}
+
+nav img{ 
+    float: left;
+}
+
+nav ul{ 
+    float: right;
+    list-style: none;
+    font-weight: 300;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a:last-child{
+    margin-left: 10px;
+}
+
+.line {
+    border-left: 1px solid #fff;
+}
+
+.btn-outline{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #f456f4;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.banner-header {
+    height: 100%;
+    padding-top: 5rem;
+
+}
+
+.banner-header .left{
+    float: left;
+    width: 50%;    
+}
+
+.banner-header .right{
+    float: right;
+    width: 50%;    
+}
+
+div h2{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #8b5cf6;
+    letter-spacing: 5px;
+}
+
+div p{
+    margin: 20px 20px 60px 0;
+    font-weight: 300;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+div .mini-message{
+    font-size: 0.9rem;
+}
