@@ -11,19 +11,33 @@
 
     <header>
         
-        <nav>
+        <nav class="flex navigation">
             <img src="https://icones.pro/wp-content/uploads/2021/07/logo-pinterest-violet.png" alt="Logo Finsave" width="50" height="auto">
 
             <ul>
-                <li>Products</li>
-                <li>Enterprise</li>
-                <li>Pricing</li>
-                <li>Resources</li>
-                <li>About</li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Enterprise</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
                 <li class="line"></li>
                 <li>
-                    <a class="btn-outline" href="#">Sign In</a>
-                    <a class="btn" href="#">Create Account</a>
+                    <li>
+                        <a class="btn-outline" href="#">Sign In</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#">Create Account</a>
+                    </li>                    
                 </li>
             </ul>
         </nav>
@@ -40,12 +54,47 @@
                 <a class="btn" href="#">Get your free account</a>
                 <p class="mini-message">In instants, no credit card required</p>
             </div>
+            
             <div class="right">
-                <img src="images/img-banner.png" alt="Dashboard">
+                
+                <div class="dashboard">
+                    <div class="group-blocks">
+                        <div class="block block-a"></div>
+                        <div class="block block-b"></div>
+                    </div>
+                    <div class="group-blocks">
+                        <div class="block block-b"></div>
+                        <div class="block block-a"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
     </header>
+
+    <main>
+        <h2>Products</h2>
+
+        <div class="flex products">
+
+            <div class="product">
+            <h3>Titulo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate facilis, illo quam beatae nesciunt culpa, nemo deleniti tempore iusto molestiae earum dolore explicabo suscipit in, rerum aliquid eos obcaecati adipisci?</p>
+            </div>
+
+            <div class="product">
+            <h3>Titulo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate facilis, illo quam beatae nesciunt culpa, nemo deleniti tempore iusto molestiae earum dolore explicabo suscipit in, rerum aliquid eos obcaecati adipisci?</p>
+            </div>
+
+            <div class="product">
+            <h3>Titulo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate facilis, illo quam beatae nesciunt culpa, nemo deleniti tempore iusto molestiae earum dolore explicabo suscipit in, rerum aliquid eos obcaecati adipisci?</p>
+            </div>
+            
+        </div>
+    </main>
 
   </body>
 </html>

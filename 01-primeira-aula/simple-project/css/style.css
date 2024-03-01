@@ -4,6 +4,12 @@ body {
     background-color: #1e2235;
     font-family: "Roboto", sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
 }
 
 header{
@@ -12,25 +18,37 @@ header{
     padding: 3rem 0;
 }
 
-nav{
-    width: 100%;
-    display: inline-block;
+.navigation {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-nav img{ 
-    float: left;
-}
-
-nav ul{ 
-    float: right;
+.navigation ul{
     list-style: none;
     font-weight: 300;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
-nav ul li{
+.navigation ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+}
+
+
+/* nav ul{ 
+    list-style: none;
+    font-weight: 300;
+}*/
+
+/* nav ul li{
     display: inline;
     margin-left: 20px;
-}
+} */
 
 nav ul li a:last-child{
     margin-left: 10px;
@@ -60,16 +78,18 @@ nav ul li a:last-child{
 .banner-header {
     height: 100%;
     padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
 .banner-header .left{
-    float: left;
-    width: 50%;    
+    width: 45%;
+    min-width: 380px;    
 }
 
 .banner-header .right{
-    float: right;
     width: 50%;    
 }
 
@@ -90,3 +110,58 @@ div p{
 div .mini-message{
     font-size: 0.9rem;
 }
+
+.dashboard{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.block{
+    background-color: rgb(53, 40, 80);
+    border-radius: 20px;
+    padding: 20px
+}
+
+.group-blocks{
+    width: 45%;
+    min-width: 250px;
+}
+
+.block-a{
+    height: 300px;
+    margin-bottom: 10px;
+    background: rgb(53,57,74);
+    background: linear-gradient(142deg, rgba(53,57,74,1) 0%, rgba(54,65,90,1) 68%, rgba(41,122,139,1) 100%);
+}
+.block-b{
+    height: 120px;
+    margin-bottom: 10px;
+    background: rgb(53,57,74);
+    background: linear-gradient(142deg, rgba(53,57,74,1) 0%, rgba(54,65,90,1) 68%, rgba(59,59,87,1) 100%);
+}
+
+main{
+    height: 50vh;
+    background-color: #fff;
+    color: #1e2235;
+    padding: 10vh 0;
+}
+
+main .products{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+main .product{
+    background-color: #1e2235;
+    padding: 2rem;
+    width: 300px;
+    color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
