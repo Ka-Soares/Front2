@@ -1,0 +1,23 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid #9f0627;
+    height: 600px;
+
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    /*a diferenca entre pixel e fracao, é que ao aumentar a tela, a fraçao se adequa a tela e o pixel se mantem*/
+    grid-template-columns: repeat(2, 100px);
+
+    /*content trabalha todo o grid*/
+    justify-content: center;
+    align-content: center;
+
+}
+
+.item {
+    padding: 10px;
+    background-color: #fe6f8e;
+    color: white;
+    border: 10px solid #ff315e;
+}
