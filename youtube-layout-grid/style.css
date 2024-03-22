@@ -10,7 +10,7 @@ body{
 }
 
 .video-box{
-    width: 350px;
+    width: 100%;
 }
 
 .thumbnail, .thumbnail img {
@@ -51,4 +51,15 @@ body{
 .time::before{
     content: "•";
     margin: 0 4px;
+}
+
+main{
+    padding: 100px 30px 0 190px;
+}
+
+.videos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;
 }
